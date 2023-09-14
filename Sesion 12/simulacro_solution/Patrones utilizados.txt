@@ -1,0 +1,27 @@
+Patrón utilizado: Command
+Participantes
+-------------
+1) Command --> Action
+   Métodos:
+   - Execute() --> execute(Editor)
+2) ConcreteCommand --> Open, Insert, RemoveLastWord, Replace, Macro
+   Métodos:
+   - Execute() --> execute(Editor)
+3) Receiver --> Editor
+   Métodos:
+   - Action() --> setText(StringBuilder), getText()
+4) Invoker --> ActionManager
+
+Patrón utilizado: Composite
+Participantes
+-------------
+1) Component --> Action
+   Métodos:
+   - Operation() --> execute(Editor)
+2) Leaf --> Open, Insert, RemoveLastWord, Replace
+   Métodos:
+   - Operation() --> execute(Editor)
+3) Composite --> Macro   
+   Métodos:
+   - Operation() --> execute(Editor)
+   - Add(Component) --> addAction(Action)

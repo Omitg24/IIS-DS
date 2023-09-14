@@ -1,0 +1,19 @@
+package docs.editor.actions;
+
+import docs.editor.Action;
+import docs.editor.Editor;
+
+public class PortadaAction implements Action {
+
+	private String text;
+		
+	public PortadaAction(String text) {	
+		this.text = text;
+	}
+
+	@Override
+	public void execute(Editor editor) {
+		editor.portada(text);
+	}
+
+}

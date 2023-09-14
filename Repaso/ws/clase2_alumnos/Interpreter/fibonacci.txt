@@ -1,0 +1,55 @@
+push 0
+push 0
+store
+
+push 2
+push 1
+store
+
+push 0
+output
+
+push 1
+output
+
+push 6
+push 0
+store
+
+push 6
+load
+push 10
+jmpg 42
+
+push 4
+push 0
+load
+push 2
+load
+add
+store
+
+push 0
+push 2
+load
+store
+
+push 2
+push 4
+load
+store
+
+push 4
+load
+output
+
+push 6
+push 6
+load
+push 1
+add
+store
+
+jmp 13
+
+push 0

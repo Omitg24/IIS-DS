@@ -1,0 +1,22 @@
+package docs.editor.actions;
+
+import docs.editor.Action;
+import docs.editor.Editor;
+
+public class InsertarAction implements Action {
+
+	private String texto;
+		
+	public InsertarAction(String texto) {	
+		this.texto = texto;
+	}
+
+	@Override
+	public void execute(Editor editor) {
+		editor.insertar(this.texto);
+		if (editor.isCambiosEnabled()) {
+			editor.addCambios(texto);
+		}
+	}
+
+}

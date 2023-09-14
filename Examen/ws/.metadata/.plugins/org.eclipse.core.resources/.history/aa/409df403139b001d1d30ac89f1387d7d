@@ -1,0 +1,25 @@
+package docs.editor.modes;
+
+import java.io.PrintWriter;
+
+import docs.editor.Editor;
+import docs.editor.Mode;
+
+public class BorradorMode implements Mode {
+	
+	private Editor editor;
+	
+	public BorradorMode(Editor editor) {
+		super(editor);
+	}
+	
+	@Override
+	public void mostrar(PrintWriter out) {
+		out.println("Portada: ");
+		out.println("Contenido:");
+		for (String line : editor.getDocument().getContents()) {
+			out.println(line);
+		}
+	}
+
+}

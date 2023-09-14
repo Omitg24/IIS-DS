@@ -1,0 +1,14 @@
+package docs.editor.actions;
+
+import docs.editor.Action;
+import docs.editor.Editor;
+
+public class InsertAction implements Action {
+
+	@Override
+	public void execute(Editor editor) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

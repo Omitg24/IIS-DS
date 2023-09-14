@@ -1,0 +1,20 @@
+
+ 1. Se añaden varios elementos al mapa...
+
+ 2. Se muestra el mapa:
+Monumento: Coliseo at [longitude = 160.0, latitude = 160.0]
+Monumento: Fontana di Trevi at [longitude = 200.0, latitude = 200.0]
+Foto: Colosseum in Rome, Italy - April 2007 at [longitude = 20.0, latitude = 20.0]
+Foto: Fontana di Trevi at [longitude = 40.0, latitude = 40.0]
+Restaurante: La Taverna dei Fori Imperiali at [longitude = 220.0, latitude = 220.0]
+Restaurante: Pane e Salame at [longitude = 190.0, latitude = 190.0]
+
+ 3. Pulsación breve sobre cada elemento: se muestra un "tooltip"
+Se abre una ventana flotante: Coliseo. Creado por Vespasiano Piazza del Colosseo, 1, 00184 Roma, Italia
+Se abre una ventana flotante: Colosseum in Rome, Italy - April 2007 (foto de DAVID ILIFF)
+Se abre una ventana flotante: La Taverna dei Fori Imperiali via Madonna dei Monti, 9, 00184 Roma, Italia +39 06 6798643
+
+ 4. Pulsación larga sobre cada elemento: realiza la acción predeterminada con cada elemento
+GPS: Gire a la derecha [...] Ha llegado a su destino: Piazza del Colosseo, 1, 00184 Roma, Italia
+Abriendo la foto Colosseum in Rome, Italy - April 2007...
+Llamando al +39 06 6798643...

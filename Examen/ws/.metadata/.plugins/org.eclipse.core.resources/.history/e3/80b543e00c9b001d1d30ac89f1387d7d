@@ -1,0 +1,63 @@
+package docs.editor;
+
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import docs.editor.modes.NormalMode;
+import docs.model.Document;
+
+public class Editor {
+	
+	private Document document;		
+	
+	private Mode mode = new NormalMode();
+	
+	private boolean isCambiosEnabled;
+	
+	private List<String> cambiosRealizados = new ArrayList<String>();
+	
+	public Editor() {
+		this(new Document());
+	}
+	
+	public Editor(Document document) {
+		this.document = document;
+	}
+
+	public void portada(String portada) {
+		this.document.setCover(portada);
+	}
+	
+	public void insertar(String texto) {
+		this.document.insert(texto);
+	}
+	
+	public void mostrar(PrintWriter out) {
+		this.mode.mostrar(out, this);
+	}	
+
+	public void setMode(Mode mode) {
+		this.mode = mode;
+	}
+	
+	public void enableCambios() {
+		this.isCambiosEnabled = true;
+	}
+	
+	public void disableCambios() {
+		this.isCambiosEnabled = true;
+	}	
+
+	public boolean isCambiosEnabled() {
+		return isCambiosEnabled;
+	}
+	
+	public void addCambios(String texto) {
+		
+	}
+
+	public Document getDocument() {
+		return document;
+	}	
+}

@@ -1,0 +1,34 @@
+SEPARAR PALABRAS
+BufferedReader in = new BufferedReader (new InputStreamReader(System.in));
+String[] line = in.readLine().split("[ ,]");
+
+
+RECTÁNGULO
+// int x,y;	Coordenadas del lugar donde se ha pulsado el ratón
+// Point esquina; int ancho, alto; Atributos del rectángulo
+
+boolean pulsado = (esquina.x <= x && x <= esquina.x + ancho) && (esquina.y <= y && y <= esquina.y + alto);
+
+
+
+CÍRCULO
+// int x,y;	Coordenadas del lugar donde se ha pulsado el ratón
+// Point centro; int radio;	Atributos del círculo
+
+double distancia = Math.sqrt(Math.pow(x - centro.x, 2) + Math.pow(y - centro.y, 2));
+boolean pulsado = distancia < radio;
+
+
+
+TRIÁNGULO
+// int x,y;	Coordenadas del lugar donde se ha pulsado el ratón
+// Point v1, v2, v3; Los tres vértices del triángulo
+
+Point posicion = new Point(x,y);
+boolean pinchado = posicion.equals(v1) || posicion.equals(v2) || posicion.equals(v3);
+
+
+
+PARA EJECUTAR EL JAR
+
+java -jar editor.jar editor.Application

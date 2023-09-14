@@ -1,0 +1,45 @@
+package docs.editor;
+
+import java.io.PrintWriter;
+
+import docs.model.Document;
+
+public class Editor {
+	
+	private Document document;		
+	
+	private Mode mode = new NormalMode();
+	
+	public Editor() {
+		this(new Document());
+	}
+	
+	public Editor(Document document) {
+		this.document = document;
+	}
+
+	public void portada(String portada) {
+		this.document.setCover(portada);
+	}
+	
+	public void insertar(String texto) {
+		this.document.insert(texto);
+	}
+	
+	public void mostrar(PrintWriter out) {
+		this.mode.mostrar(this);
+		out.println("Portada: " + document.getCover());
+		out.println("Contenido:");
+		for (String line : document.getContents()) {
+			out.println(line);
+		}
+	}	
+
+	public void setMode(Mode mode) {
+		this.mode = mode;
+	}
+
+	public Document getDocument() {
+		return document;
+	}	
+}

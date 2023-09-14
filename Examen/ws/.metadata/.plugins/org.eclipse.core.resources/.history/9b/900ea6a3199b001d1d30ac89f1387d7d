@@ -1,0 +1,17 @@
+package docs.editor.actions;
+
+import docs.editor.Action;
+
+public class PortadaAction implements Action {
+
+	private String texto;
+		
+	public PortadaAction(String texto) {	
+		this.texto = texto;
+	}
+
+	@Override
+	public String execute() {
+		return "Se cambió la imagen de portada: " + texto;
+	}
+}

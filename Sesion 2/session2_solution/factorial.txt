@@ -1,0 +1,38 @@
+push 0 // número en dirección 0
+input 
+store
+
+push 1 // índice en dirección 1
+push 1 
+store
+
+push 2 // resultado en dirección 2
+push 1 
+store
+
+push 1
+load
+push 0
+load
+jmpg 28
+
+push 2
+push 2
+load
+push 1
+load
+mul
+store
+
+push 1
+push 1
+load
+push 1
+add
+store
+
+jmp 9
+
+push 2
+load
+output

@@ -1,0 +1,18 @@
+package docs.editor.modes;
+
+import java.io.PrintWriter;
+
+import docs.editor.Editor;
+
+public class EsquemaMode extends WriteMode {
+
+	public EsquemaMode(Editor editor) {
+		super(editor);		
+	}
+
+	@Override
+	public void mostrar(PrintWriter out) {
+		
+	}
+
+}

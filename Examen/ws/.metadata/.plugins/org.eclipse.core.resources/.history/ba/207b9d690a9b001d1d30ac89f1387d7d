@@ -1,0 +1,17 @@
+package docs.editor;
+
+public class DocumentManager {
+	
+	private Editor editor;
+
+	private Mode mode;
+	
+	public DocumentManager(Editor editor) {
+		this.editor = editor;
+	}
+	
+	public void execute(Action action) {
+		action.execute(this.editor);
+	}	
+	
+}

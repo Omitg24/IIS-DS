@@ -1,0 +1,24 @@
+package docs.editor;
+
+public class DocumentManager {
+	
+	private Editor editor;
+
+	
+	
+	public DocumentManager(Editor editor) {
+		this.editor = editor;
+	}
+	
+	public void execute(Action action) {
+		action.execute(this.editor);
+	}	
+	
+	public void setMode(Mode mode) {
+		this.editor.setMode(mode);
+	}
+
+	public void mostrar(PrintWriter out) {
+		this.editor.mostrar(null);		
+	}	
+}

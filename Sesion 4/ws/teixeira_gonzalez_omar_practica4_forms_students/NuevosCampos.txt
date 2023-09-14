@@ -1,0 +1,12 @@
+"Codigo de Producto". Longitud = 4
+
+"Codigo Postal". Digitos y longitud = 5
+
+"Edad". Digitos y mayor 18
+
+"Sueldo". Digitos y mayor que 800 y menor que 1200
+
+"Ubicación". Santander..Cadiz o código postal
+
+"Código de Promoción". Texto o (numero de 3 digitos)
+

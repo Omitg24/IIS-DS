@@ -1,0 +1,21 @@
+Ejemplo de cómo debería ser el fichero donde indiquéis el patrón o patrones
+utilizados y la correspondencia entre los participantes de la estructura
+genérica del patrón y los elementos (clases, interfaces, métodos, atributos)
+de vuestra solución.
+
+
+Patrón utilizado: Observer
+Participantes
+-------------
+1) Subject —> SecurityNotifier
+   Métodos:
+    - Attach(Observer) —> addObserver(SecurityObserver)
+    - Detach(Observer) —> removeObserver(SecurityObserver)
+    - Notify() —> updateObservers()
+2) Observer —> SecurityObserver
+   Métodos:
+    - Update() —> notify(device: int, event: int)
+3) ConcreteSubject —> SecurityMonitor, SecurityClient
+   Métodos:
+    - getState() —> getValue()
+    - setState() —> -

@@ -1,0 +1,288 @@
+Acciones: [S]iguiente - [A]nterior - Nueva diapositiva en [B]lanco
+          [N]ueva a partir de maestra - Convertir en [M]aestra
+          [E]ditar - [P]resentación - Salir
+------------------------------------------------------------------
+> ; Creación de una diapositiva a partir de uno de los diseños predefinidos
+> N
+1. Título
+2. Título y viñetas
+3. Título, viñertas y foto
+> 1
+Introduce el texto del título: Mi gran presentación
+Diapositiva 1 de 1
+┌─────────────────┐
+│                 │
+├─────────────────│
+        ...        
+│                 │
+└─────────────────┘
+Dibujando en: CENTER...
+MI GRAN PRESENTACIÓN
+> 
+> ; Lo mismo con otro diseño, "Título y viñetas"
+> N
+1. Título
+2. Título y viñetas
+3. Título, viñertas y foto
+> 2
+Introduce el texto del título: Mi primera diapositiva
+Introduce los elementos de la lista, uno a uno (en blanco para terminar):
+ - Uno
+ - Dos
+ - Tres
+ - 
+Diapositiva 2 de 2
+┌────┬────┬─   ───┐
+│    │    │       │
+│    │    │  ...  │
+│    │    │       │
+│    │    │       │
+└────┴────┴─   ───┘
+Dibujando en: TOP...
+MI PRIMERA DIAPOSITIVA
+Dibujando en: BOTTOM...
+ - Uno
+ - Dos
+ - Tres
+> 
+> ; Creamos otra con el mismo diseño
+> N
+1. Título
+2. Título y viñetas
+3. Título, viñertas y foto
+> 2
+Introduce el texto del título: Otra
+Introduce los elementos de la lista, uno a uno (en blanco para terminar):
+ - Hola
+ - ¿Qué tal?
+ - Adiós
+ - 
+Diapositiva 3 de 3
+┌────┬────┬─   ───┐
+│    │    │       │
+│    │    │  ...  │
+│    │    │       │
+│    │    │       │
+└────┴────┴─   ───┘
+Dibujando en: TOP...
+OTRA
+Dibujando en: BOTTOM...
+ - Hola
+ - ¿Qué tal?
+ - Adiós
+> 
+> Anterior
+Diapositiva 2 de 3
+┌────┬────┬─   ───┐
+│    │    │       │
+│    │    │  ...  │
+│    │    │       │
+│    │    │       │
+└────┴────┴─   ───┘
+Dibujando en: TOP...
+MI PRIMERA DIAPOSITIVA
+Dibujando en: BOTTOM...
+ - Uno
+ - Dos
+ - Tres
+> 
+> ; Editamos la diapositiva anterior
+> Editar
+Introduce el texto del título: Mi primera diapositiva
+Introduce los elementos de la lista, uno a uno (en blanco para terminar):
+ - 1
+ - 2
+ - 3
+ - 
+Diapositiva 2 de 3
+┌────┬────┬─   ───┐
+│    │    │       │
+│    │    │  ...  │
+│    │    │       │
+│    │    │       │
+└────┴────┴─   ───┘
+Dibujando en: TOP...
+MI PRIMERA DIAPOSITIVA
+Dibujando en: BOTTOM...
+ - 1
+ - 2
+ - 3
+> 
+> ; Volvemos a la última
+> Siguiente
+Diapositiva 3 de 3
+┌────┬────┬─   ───┐
+│    │    │       │
+│    │    │  ...  │
+│    │    │       │
+│    │    │       │
+└────┴────┴─   ───┘
+Dibujando en: TOP...
+OTRA
+Dibujando en: BOTTOM...
+ - Hola
+ - ¿Qué tal?
+ - Adiós
+> 
+> ; Editamos ahora esta última
+> Editar
+Introduce el texto del título: La tercera
+Introduce los elementos de la lista, uno a uno (en blanco para terminar):
+ - Casa
+ - Perro
+ - Gato
+ - 
+Diapositiva 3 de 3
+┌────┬────┬─   ───┐
+│    │    │       │
+│    │    │  ...  │
+│    │    │       │
+│    │    │       │
+└────┴────┴─   ───┘
+Dibujando en: TOP...
+LA TERCERA
+Dibujando en: BOTTOM...
+ - Casa
+ - Perro
+ - Gato
+> 
+> ; Volvemos de nuevo a la anterior para comprobar que los cambios en una
+> ; no afectan a la otra, en ninguno de los dos sentidos, aunque estén
+> ; ambas creadas a partir del mismo diseño maestro
+> Anterior
+Diapositiva 2 de 3
+┌────┬────┬─   ───┐
+│    │    │       │
+│    │    │  ...  │
+│    │    │       │
+│    │    │       │
+└────┴────┴─   ───┘
+Dibujando en: TOP...
+MI PRIMERA DIAPOSITIVA
+Dibujando en: BOTTOM...
+ - 1
+ - 2
+ - 3
+> Siguiente
+Diapositiva 3 de 3
+┌────┬────┬─   ───┐
+│    │    │       │
+│    │    │  ...  │
+│    │    │       │
+│    │    │       │
+└────┴────┴─   ───┘
+Dibujando en: TOP...
+LA TERCERA
+Dibujando en: BOTTOM...
+ - Casa
+ - Perro
+ - Gato
+> 
+> ; Ahora creamos una diapositiva en blanco, a la que añadiremos dos columnas,
+> ; y que contenga un título a la izquierda y una imagen a la derecha
+> Blanco
+Elige cómo se dispondrán los elementos de esta diapositiva:
+  => [N]ormal, [C]olumnas o [G]rid: C
+Ahora, los marcadores de posición (en blanco para terminar):
+ - Posición en el diseño: LEFT
+ - Tipo de marcador ([T]ítulo, [L]ista de viñetas o [I]magen): T
+ - Posición en el diseño: RIGHT
+ - Tipo de marcador ([T]ítulo, [L]ista de viñetas o [I]magen): I
+ - Posición en el diseño: 
+Introduce el texto del título: Otra sección
+Ubicación de la imagen: mickey.png
+Texto alternativo: Mickey Mouse
+Diapositiva 4 de 4
+┌────┬────┬─   ───┐
+│    │    │       │
+│    │    │  ...  │
+│    │    │       │
+│    │    │       │
+└────┴────┴─   ───┘
+Dibujando en: LEFT...
+OTRA SECCIÓN
+Dibujando en: RIGHT...
+Imagen: mickey.png (Mickey Mouse)
+> 
+> ; La convertimos en maestra, con el nombre de "Título y foto vertical"
+> Maestra
+¿Qué nombre tendrá este diseño?: Título y foto vertical
+> 
+> ; Ahora deberíamos poder añadir otra nueva basada en ese mismo diseño
+> N
+1. Título
+2. Título y viñetas
+3. Título, viñertas y foto
+4. Título y foto vertical
+> 4
+Introduce el texto del título: Mi gran foto
+Ubicación de la imagen: kitty.png
+Texto alternativo: Hello Kitty
+Diapositiva 5 de 5
+┌────┬────┬─   ───┐
+│    │    │       │
+│    │    │  ...  │
+│    │    │       │
+│    │    │       │
+└────┴────┴─   ───┘
+Dibujando en: LEFT...
+MI GRAN FOTO
+Dibujando en: RIGHT...
+Imagen: kitty.png (Hello Kitty)
+> 
+> ; Mostramos todas las diapositivas
+> Presentación
+┌─────────────────┐
+│                 │
+├─────────────────│
+        ...        
+│                 │
+└─────────────────┘
+Dibujando en: CENTER...
+MI GRAN PRESENTACIÓN
+┌────┬────┬─   ───┐
+│    │    │       │
+│    │    │  ...  │
+│    │    │       │
+│    │    │       │
+└────┴────┴─   ───┘
+Dibujando en: TOP...
+MI PRIMERA DIAPOSITIVA
+Dibujando en: BOTTOM...
+ - 1
+ - 2
+ - 3
+┌────┬────┬─   ───┐
+│    │    │       │
+│    │    │  ...  │
+│    │    │       │
+│    │    │       │
+└────┴────┴─   ───┘
+Dibujando en: TOP...
+LA TERCERA
+Dibujando en: BOTTOM...
+ - Casa
+ - Perro
+ - Gato
+┌────┬────┬─   ───┐
+│    │    │       │
+│    │    │  ...  │
+│    │    │       │
+│    │    │       │
+└────┴────┴─   ───┘
+Dibujando en: LEFT...
+OTRA SECCIÓN
+Dibujando en: RIGHT...
+Imagen: mickey.png (Mickey Mouse)
+┌────┬────┬─   ───┐
+│    │    │       │
+│    │    │  ...  │
+│    │    │       │
+│    │    │       │
+└────┴────┴─   ───┘
+Dibujando en: LEFT...
+MI GRAN FOTO
+Dibujando en: RIGHT...
+Imagen: kitty.png (Hello Kitty)
+> 
+> Salir

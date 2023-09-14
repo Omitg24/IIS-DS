@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="docs.model.Document"/>
+    <fullyQualifiedTypeName name="docs.editor.DocumentManager"/>
+    <fullyQualifiedTypeName name="docs.editor.Editor"/>
+    <fullyQualifiedTypeName name="docs.editor.actions.InsertAction"/>
+    <fullyQualifiedTypeName name="docs.editor.actions.PortadaAction"/>
+    <fullyQualifiedTypeName name="docs.editor.modes.NormalMode"/>
+    <fullyQualifiedTypeName name="docs.editor.modes.LecturaMode"/>
+    <fullyQualifiedTypeName name="docs.editor.Mode"/>
+    <fullyQualifiedTypeName name="docs.editor.modes.EsquemaMode"/>
+    <fullyQualifiedTypeName name="docs.editor.Action"/>
+</qualifiedTypeNameHistroy>

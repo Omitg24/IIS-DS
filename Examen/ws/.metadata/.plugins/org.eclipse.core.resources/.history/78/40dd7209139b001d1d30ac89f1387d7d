@@ -1,0 +1,34 @@
+package docs.editor.modes;
+
+import java.io.PrintWriter;
+
+import docs.editor.Editor;
+import docs.editor.Mode;
+
+public class LecturaMode implements Mode {
+	
+	private Editor editor;
+	
+	public LecturaMode(Editor editor) {
+		this.editor = editor;
+	}
+
+	@Override
+	public void insertar(String texto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void portada(String texto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mostrar(PrintWriter out) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,1 @@
+(char) (Character.isLetterOrDigit(c) ? c + 1 : c)

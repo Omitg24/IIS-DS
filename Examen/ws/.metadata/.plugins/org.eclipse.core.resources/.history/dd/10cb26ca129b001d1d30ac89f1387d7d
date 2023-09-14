@@ -1,0 +1,27 @@
+package docs.editor.modes;
+
+import java.io.PrintWriter;
+
+import docs.editor.Mode;
+
+public class WriteMode implements Mode {
+
+	@Override
+	public void insertar(String texto) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void portada(String texto) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void mostrar(PrintWriter out) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

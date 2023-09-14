@@ -1,0 +1,9 @@
+package docs.editor;
+
+import java.io.PrintWriter;
+
+public interface Mode {
+	void insertar(String texto);
+	void portada(String texto);
+	void mostrar(PrintWriter out);
+}

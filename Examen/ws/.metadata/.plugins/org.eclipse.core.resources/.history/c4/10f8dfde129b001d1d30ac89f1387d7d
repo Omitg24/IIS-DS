@@ -1,0 +1,28 @@
+package docs.editor.modes;
+
+import docs.editor.Mode;
+
+public abstract class WriteMode implements Mode {
+
+	private Editor editor;
+	
+	
+	
+	public WriteMode(Editor editor) {
+		this.editor = editor;
+	}
+
+	@Override
+	public void insertar(String texto) {
+		editor.insertar(texto);
+		if (editor.isCambiosEnabled()) {
+			editor.addCambios("Se añadió la línea: " + texto);
+		}
+	}
+
+	@Override
+	public void portada(String texto) {
+		// TODO Auto-generated method stub
+
+	}
+}

@@ -1,0 +1,17 @@
+package docs.editor.actions;
+
+import docs.editor.Action;
+import docs.editor.Editor;
+
+public class PortadaAction implements Action {
+
+	private String text;
+	
+	
+	@Override
+	public void execute(Editor editor) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

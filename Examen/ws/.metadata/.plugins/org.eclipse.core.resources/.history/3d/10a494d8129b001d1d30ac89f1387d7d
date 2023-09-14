@@ -1,0 +1,18 @@
+package docs.editor.modes;
+
+import docs.editor.Mode;
+
+public abstract class WriteMode implements Mode {
+
+	@Override
+	public void insertar(String texto) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void portada(String texto) {
+		// TODO Auto-generated method stub
+
+	}
+}

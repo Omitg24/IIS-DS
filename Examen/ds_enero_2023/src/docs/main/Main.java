@@ -1,0 +1,18 @@
+package docs.main;
+
+import java.io.IOException;
+
+import docs.editor.Editor;
+import docs.model.Document;
+import docs.ui.EditorTextUI;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException {
+
+		Document document = new Document();
+		Editor editor = new Editor(document);
+		EditorTextUI ui = new EditorTextUI(editor);
+		ui.run();
+	}
+}

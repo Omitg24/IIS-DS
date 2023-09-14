@@ -1,0 +1,93 @@
+package docs.ui;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+
+import docs.editor.Editor;
+import docs.editor.modes.*;;
+
+public class EditorTextUI {
+	
+	private Editor editor;
+	
+	private PrintWriter out = new PrintWriter(System.out, true);
+    private BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+	
+	public EditorTextUI(Editor editor) {
+		this.editor = editor;
+	}
+	
+	public void run() throws IOException {
+		
+		showHelp();
+		
+		do {
+			out.print("> ");
+			out.flush();
+			
+			// Divide la entrada del usuario en una o dos partes usando el primer
+			// espacio en blanco, si lo hay, como separador; por ejemplo: 
+			//
+			//   "insertar Lorem ipsum dolor" => ["insertar", "Lorem ipsum dolor"]
+			//   "mostrar"                    => ["mostrar"]
+			//
+			String[] userInput = in.readLine().split(" ", 2);
+			String option = userInput[0];
+			// Si no se había indicado parámetro se inicializa a la cadena vacía
+			String argument = userInput.length == 2 ? userInput[1] : "";
+			
+			if (option.equals("salir")) {
+				out.println("Adios");
+				return;
+			}
+			
+			if (option.equals("ayuda")) { 
+				showHelp();
+				
+			} else if (option.equals("portada")) {
+				this.editor.portada(argument);
+			} else if (option.equals("insertar")) {
+				this.editor.insertar(argument);
+            } else if (option.equals("mostrar")) {
+            	this.editor.mostrar(out);
+            //-- Modos del editor
+            } else if (option.equals("borrador")) {
+            	this.editor.setMode(new BorradorMode(editor));
+            	this.editor.disableCambios();
+            } else if (option.equals("normal")) {
+            	this.editor.setMode(new NormalMode(editor));
+            	this.editor.disableCambios();
+            } else if (option.equals("cambios")) {            	
+            	this.editor.setMode(new CambiosMode(editor));
+            	this.editor.enableCambios();
+            } else if (option.equals("lectura")) {
+            	this.editor.setMode(new LecturaMode(editor));
+            } else if (option.equals("esquema")) {            	
+            	this.editor.setMode(new EsquemaMode(editor));			
+        	} else {
+				out.println("Opción incorrecta");
+			}			
+		} while (true);
+	}
+	
+	private void showHelp() {
+		out.println("Acciones:");
+		out.println("--------");
+        out.println("- portada <ruta>\t| Cambia la imagen de portada");
+		out.println("- insertar <texto>\t| Añade el texto al documento");
+        out.println("- mostrar\t\t| Imprime el documento por pantalla");
+        out.println("- ayuda\t\t\t| Muestra todas las opciones disponibles");
+		out.println("- salir");
+		out.println();
+        out.println("Vistas y modos de edición:");
+		out.println("-------------------------");
+		out.println("cambios\t\t\t| Activa el control de cambios");
+		out.println("borrador\t\t| Activa la vista borrador");
+		out.println("normal\t\t\t| Modo normal (predeterminado)");
+        out.println("lectura\t\t\t| Modo de solo lectura");
+        out.println("esquema\t\t\t| Activa la vista de esquema");
+        out.println();
+	}	
+}

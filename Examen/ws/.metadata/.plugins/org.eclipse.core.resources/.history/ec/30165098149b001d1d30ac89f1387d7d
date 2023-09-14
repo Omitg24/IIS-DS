@@ -1,0 +1,13 @@
+package docs.editor.modes;
+
+import java.io.PrintWriter;
+
+public class EsquemaMode extends WriteMode {
+
+	@Override
+	public void mostrar(PrintWriter out) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

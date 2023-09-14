@@ -1,0 +1,25 @@
+package docs.editor.modes;
+
+import java.io.PrintWriter;
+
+import docs.editor.Editor;
+
+public class CambiosMode extends WriteMode {
+		
+	public CambiosMode(Editor editor) {
+		super(editor);
+	}
+	
+	@Override
+	public void mostrar(PrintWriter out) {
+		out.println("Portada: " + this.editor.getDocument().getCover());
+		out.println("Contenido:");
+		for (String line : this.editor.getDocument().getContents()) {
+			out.println(line);
+		}
+		out.println("Cambios realizados:");
+		for (String cambio : this.editor.getCambios()) {
+			out.println(" - " + cambio);
+		}
+	}
+}

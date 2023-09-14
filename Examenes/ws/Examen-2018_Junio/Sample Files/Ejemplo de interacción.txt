@@ -1,0 +1,80 @@
+Reproducción: reproducir - anterior - siguiente
+Volumen: subir - bajar
+Otras acciones: voz - reproducir_pulsado - ayuda - salir
+--------------------------------------------------------
+> voz
+La luz parpadea: Se activó el modo VoiceOver
+Voz: Surfin' USA (The Beach Boys) (volumen: 3)
+> reproducir
+La luz parpadea: Comienza la reproducción
+Reproduciendo "Surfin' USA.m4a" con un volumen de 3...
+> siguiente
+La luz parpadea: Siguiente canción (Iko Iko)
+Voz: Iko Iko (The Belle Stars) (volumen: 3)
+Reproduciendo "Iko Iko.m4a" con un volumen de 3...
+> siguiente
+La luz parpadea: Siguiente canción (No sé por qué te quiero)
+Voz: No sé por qué te quiero (Antonio García de Diego y Olga Román) (volumen: 3)
+Reproduciendo "No sé por qué te quiero.m4a" con un volumen de 3...
+> reproducir
+La luz parpadea: El iPod está en pausa
+> siguiente
+La luz parpadea: Siguiente canción (Blowin' In the Wind)
+Voz: Blowin' In the Wind (Bob Dylan) (volumen: 3)
+> siguiente
+La luz parpadea: Siguiente canción (Esta tarde vi llover)
+Voz: Esta tarde vi llover (Armando Manzanero) (volumen: 3)
+> reproducir
+La luz parpadea: Comienza la reproducción
+Reproduciendo "Esta tarde vi llover.m4a" con un volumen de 3...
+> voz
+La luz parpadea: Se desactivó el modo VoiceOver
+Reproduciendo "Esta tarde vi llover.m4a" con un volumen de 3...
+> siguiente
+La luz parpadea: Siguiente canción (Livin' On a Prayer)
+Reproduciendo "Livin' On a Prayer.m4a" con un volumen de 3...
+> reproducir_pulsado
+La luz parpadea: El iPod se ha bloqueado
+Reproduciendo "Livin' On a Prayer.m4a" con un volumen de 3...
+> siguiente
+La luz parpadea: El iPod está bloqueado
+Reproduciendo "Livin' On a Prayer.m4a" con un volumen de 3...
+> 
+Reproduciendo "Livin' On a Prayer.m4a" con un volumen de 3...
+> 
+Reproduciendo "Livin' On a Prayer.m4a" con un volumen de 3...
+> 
+Reproduciendo "Livin' On a Prayer.m4a" con un volumen de 3...
+> anterior
+La luz parpadea: El iPod está bloqueado
+Reproduciendo "Livin' On a Prayer.m4a" con un volumen de 3...
+> voz
+La luz parpadea: El iPod está bloqueado
+Reproduciendo "Livin' On a Prayer.m4a" con un volumen de 3...
+> reproducir_pulsado
+La luz parpadea: El iPod se ha desbloqueado
+Reproduciendo "Livin' On a Prayer.m4a" con un volumen de 3...
+> siguiente
+La luz parpadea: Siguiente canción (Total Eclipse of the Heart)
+Reproduciendo "Total Eclipse of the Heart.m4a" con un volumen de 3...
+> subir
+La luz parpadea: Se subió el volumen
+Reproduciendo "Total Eclipse of the Heart.m4a" con un volumen de 4...
+> bajar
+La luz parpadea: Se bajó el volumen
+Reproduciendo "Total Eclipse of the Heart.m4a" con un volumen de 3...
+> bajar
+La luz parpadea: Se bajó el volumen
+Reproduciendo "Total Eclipse of the Heart.m4a" con un volumen de 2...
+> reproducir
+La luz parpadea: El iPod está en pausa
+> bajar
+La luz parpadea: Se bajó el volumen
+Se emitió un tono con un volumen de 1
+> bajar
+La luz parpadea: Se bajó el volumen
+Se emitió un tono con un volumen de 0
+> bajar
+La luz parpadea: El volumen del iPod ya está al mínimo
+> salir
+¡Adios!

@@ -1,0 +1,52 @@
+General: todas - abrir <nº de foto>
+Ajustes: <ajuste> <valor> - activar <ajuste> - desactivar <ajuste> - restablecer
+         copiar_ajustes - pegar_ajustes
+Otras acciones: salir - ayuda
+--------------------------------------------------------------------------------
+> todas
+ 1 - toranda.jpg
+ 2 - bodegon.jpg
+ 3 - helado.tiff
+ 4 - retrato.tiff
+ 5 - urriellu.jpg
+> abrir 1
+toranda.jpg
+> brillo 8
+toranda.jpg
+Brillo: +8
+> contraste -6
+toranda.jpg
+Brillo: +8
+Contraste: -6
+> activar degradado
+Nombre de ajuste desconocido
+> desactivar brillo
+toranda.jpg
+Contraste: -6
+> copiar_ajustes
+> degradado 33
+Acción o nombre de ajuste desconocido
+> activar brillo
+toranda.jpg
+Brillo: +0
+Contraste: -6
+> desactivar contraste
+toranda.jpg
+Brillo: +0
+> abrir 4
+retrato.tiff
+> pegar_ajustes
+> contraste 12
+retrato.tiff
+Contraste: +12
+> abrir 2
+bodegon.jpg
+> activar nitidez
+Nombre de ajuste desconocido
+> abrir 1
+toranda.jpg
+Brillo: +0
+> restablecer
+toranda.jpg
+> salir
+¡Adios!

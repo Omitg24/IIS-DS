@@ -1,0 +1,7 @@
+package docs.editor;
+
+import java.io.PrintWriter;
+
+public interface Mode {
+	void mostrar(PrintWriter out, Editor editor);
+}

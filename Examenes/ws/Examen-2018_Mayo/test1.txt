@@ -1,0 +1,18 @@
+todas
+abrir 1
+brillo 8
+contraste -6
+activar degradado
+desactivar brillo
+copiar_ajustes
+degradado 33
+activar brillo
+desactivar contraste
+abrir 4
+pegar_ajustes
+contraste 12
+abrir 2
+activar nitidez
+abrir 1
+restablecer
+salir

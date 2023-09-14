@@ -1,0 +1,84 @@
+package docs.editor;
+
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+
+import docs.editor.modes.NormalMode;
+import docs.model.Document;
+
+//PATRÓN STATE
+//	Representa la clase Context
+//	Métodos:
+//		changeState() -> setMode()
+// 		Request1() -> portada()
+//		Request2() -> insertar()
+//		Request3() -> mostrar()
+public class Editor {
+	
+	private Document document;		
+	
+	private Mode mode = new NormalMode(this);
+	
+	private boolean isCambiosEnabled;
+	
+	//private List<String> cambiosRealizados = new ArrayList<String>();
+	//private List<Action> cambiosRealizados = new ArrayList<Action>();
+	
+	public Editor() {
+		this(new Document());
+	}
+	
+	public Editor(Document document) {
+		this.document = document;
+	}
+
+	public void portada(String portada) {
+		this.mode.portada(portada);
+	}
+	
+	public void insertar(String texto) {
+		this.mode.insertar(texto);
+	}
+	
+	public void mostrar(PrintWriter out) {
+		
+		this.mode.mostrar(out);
+	}	
+
+	public void setMode(Mode mode) {
+		this.mode = mode;
+	}	
+	
+	public void enableCambios() {
+		this.isCambiosEnabled = true;
+	}
+	
+	public void disableCambios() {
+		this.isCambiosEnabled = false;
+	}	
+
+	public boolean isCambiosEnabled() {
+		return isCambiosEnabled;
+	}
+	
+//	public void addCambio(String texto) {
+//		this.cambiosRealizados.add(texto);
+//	}
+//	
+//	public List<String> getCambios() {
+//		return this.cambiosRealizados;
+//	}
+	
+	public void addCambios(Action action) {
+		this.cambiosRealizados.add(action);
+	}
+	
+	public List<Action> getCambios() {
+		return this.cambiosRealizados;
+	}
+
+	public Document getDocument() {
+		return document;
+	}	
+}
